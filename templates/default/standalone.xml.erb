@@ -385,8 +385,8 @@
         </interface>
     </interfaces>
     <socket-binding-group name="standard-sockets" default-interface="public" port-offset="${jboss.socket.binding.port-offset:0}">
-        <socket-binding name="http" port="8080"/>
-        <socket-binding name="https" port="8443"/>
+        <socket-binding name="http" port="9081"/>
+        <socket-binding name="https" port="9443"/>
         <% if @queues and !@queues.empty? -%>
         <socket-binding name="messaging" port="5445"/>
         <socket-binding name="messaging-throughput" port="5455"/>
